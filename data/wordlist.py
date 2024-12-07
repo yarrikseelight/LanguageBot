@@ -1,4 +1,4 @@
-data = [
+wordlist = [
   {
     "simplified": "白",
     "traditional": "白",
@@ -25,7 +25,7 @@ data = [
     "pinyin": "bāngzhù",
     "definitions": [
       "help",
-      "top help",
+      "to help",
       "assist",
       "aid"
     ]
@@ -153,6 +153,7 @@ data = [
     "traditional": "等",
     "pinyin": "děng",
     "definitions": [
+      "wait",
       "to wait",
       "rank",
       "equal",
@@ -222,7 +223,8 @@ data = [
     "traditional": "服務員",
     "pinyin": "fúwùyuán",
     "definitions": [
-      "waiter/waitress",
+      "waiter",
+      "waitress",
       "server",
       "attendant"
     ]
@@ -322,7 +324,8 @@ data = [
     "definitions": [
       "child",
       "children",
-      "son or daughter"
+      "son",
+      "daughter"
     ]
   },
   {
@@ -590,7 +593,8 @@ data = [
     "traditional": "賣",
     "pinyin": "mài",
     "definitions": [
-      "to sell"
+      "to sell",
+      "sell"
     ]
   },
   {
@@ -683,7 +687,8 @@ data = [
     "traditional": "旁邊",
     "pinyin": "pángbiān",
     "definitions": [
-      "side, beside"
+      "side",
+      "beside"
     ]
   },
   {
@@ -865,6 +870,8 @@ data = [
     "pinyin": "shuōhuà",
     "definitions": [
       "to talk",
+      "talk",
+      "to speak",
       "speak"
     ]
   },
@@ -1207,7 +1214,7 @@ data = [
     "traditional": "陰",
     "pinyin": "yīn",
     "definitions": [
-      "cloudy (weather)",
+      "cloudy",
       "yin (the negative principle of Yin and Yang)",
       "secret",
       "the moon",
@@ -1276,7 +1283,8 @@ data = [
     "traditional": "早上",
     "pinyin": "zǎoshang",
     "definitions": [
-      "(early) morning"
+      "morning",
+      "early morning"
     ]
   },
   {
