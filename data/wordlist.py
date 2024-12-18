@@ -67,7 +67,7 @@ wordlist = [
     "definitions": [
       "long",
       "length | grow",
-      "chief (Kangxi radical 168)"
+      "chief"
     ]
   },
   {
@@ -75,7 +75,6 @@ wordlist = [
     "traditional": "唱歌",
     "pinyin": "chànggē",
     "definitions": [
-      "sing (a song)",
       "to sing",
       "sing"
     ]
@@ -662,7 +661,8 @@ wordlist = [
     "traditional": "您",
     "pinyin": "nín",
     "definitions": [
-      "you (polite)"
+      "you",
+      "(polite) you"
     ]
   },
   {
@@ -679,7 +679,7 @@ wordlist = [
     "pinyin": "nǚ",
     "definitions": [
       "woman",
-      "female (Kangxi radical 38)"
+      "female"
     ]
   },
   {

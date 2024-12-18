@@ -2,6 +2,7 @@ import requests
 import pinyin
 import random
 from telegram.ext import ContextTypes
+from telegram import Update
 from fuzzywuzzy import fuzz
 
 
@@ -66,6 +67,17 @@ def check_answer(correct_translation, user_answer):
                 if fuzzy_ratio > 80:
                     answer_is_correct = True
     return answer_is_correct
+
+
+async def view_errors(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    error_words = context.user_data.get('error_words', [])
+    if error_words:
+        message = "Here are the words you have answered incorrectly during the quizzes:\n"
+        for word in error_words:
+            message += f"{word['simplified']} ({word['pinyin']}) - {', '.join(word['definitions'])}\n"
+        await update.message.reply_text(message)
+    else:
+        await update.message.reply_text("You don't have any incorrect words yet!")
     
     
 
@@ -73,7 +85,7 @@ def check_answer(correct_translation, user_answer):
         # Usage in main.py:
             # example_sentences = get_example_sentences(client, word_to_quiz)
             # await update.message.reply_text(example_sentences) 
-            # But pls implement it in a way that it just skips this step if there's no API key provided       
+            # Implement it in a way that it just skips this step if there's no API key provided       
 def get_example_sentences(client, word):
     completion = client.chat.completions.create(
     model="gpt-4o-mini",
